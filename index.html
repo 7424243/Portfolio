@@ -12,7 +12,7 @@
   <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 
-<body class="align-center">
+<body>
 
   <!-- Header -->
   <header>
@@ -20,11 +20,11 @@
       <h1>Samantha Sheets</h1>
       <h2><em>Software Engineer</em></h2>
       <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="nav-list">
+          <li class="nav-list-item"><a href="#about">About</a></li>
+          <li class="nav-list-item"><a href="#skills">Skills</a></li>
+          <li class="nav-list-item"><a href="#portfolio">Portfolio</a></li>
+          <li class="nav-list-item"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
   
@@ -37,13 +37,12 @@
     <section id="about" class="first-section">
       <h3>About Me</h3>
       <article>
-        <div class="group">
-          <div class="item text">
-            <p>Hi, everyone!</p>
-            <p>As a recent graduate of Thinkful's Software Engineering Program, I am excited to join a team of great developers. I appreciate both front end and back end development and enjoy the process of building full stack projects. When I'm not coding, I can be found spending time in the sun, paddleboarding, and doing yoga.</p>
-            <p></p>
+        <div class="first-section-outer">
+          <div class="first-section-inner">
+            <p class="first-section-text">Hi, everyone!</p>
+            <p class="first-section-text">As a recent graduate of Thinkful's Software Engineering Program, I am excited to join a team of great developers. I appreciate both front end and back end development and enjoy the process of building full stack projects. When I'm not coding, I can be found spending time in the sun, paddleboarding, and doing yoga.</p>
           </div>
-          <div class="item">
+          <div class="first-section-inner">
             <img class="about-img" src="images/portfolio.jpg" alt="Portfolio image of Samantha">
           </div>
         </div>
@@ -53,7 +52,7 @@
     <!-- Section #2 -->
     <section id="skills" class="second-section">
       <h3>Technical Skills</h3>
-      <div class="item text">
+      <div class="second-section-outer">
         <ul class="skills-list">
           <li class="skill">JavaScript ES6</li>
           <li class="skill">jQuery</li>
@@ -74,64 +73,57 @@
 
     <!-- Section #3 -->
     <section id="portfolio" class="third-section">
-      <h3 class="portfolio-heading">My Portfolio</h3>
-      <article>
-        <div class="portfolio">
+      <h3>My Portfolio</h3>
+        <div class="third-section-outer">
           <div class="portfolio-item">
-            <a href="https://7424243.github.io/quizz-app/" target="_blank"><img class="portfolio-img" src="images/quiz-app.png" alt="quiz app screenshot"></a>
             <h4>Quiz App</h4>
-            <p>This was one of my first projects. It is an interactive and responsive web app that tests your knowledge of movie quotes. The app is comprised of semantic HTML and CSS, jQuery, Javascript functions, and event handlers. Check it out <a href="https://7424243.github.io/quizz-app/" target="_blank"><strong>here</strong></a> or view the files on <a href="https://github.com/7424243/quizz-app" target="_blank"><strong>GitHub</strong></a>.</p>
+            <a href="https://7424243.github.io/quizz-app/" target="_blank"><img class="portfolio-img" src="images/quiz-app.png" alt="quiz app screenshot"></a>
+            <p class="portfolio-text">This was one of my first projects. It is an interactive and responsive web app that tests your knowledge of movie quotes. The app is comprised of semantic HTML and CSS, jQuery, Javascript functions, and event handlers. Check it out <a href="https://7424243.github.io/quizz-app/" target="_blank"><strong>here</strong></a>or view the files on <a href="https://github.com/7424243/quizz-app" target="_blank"><strong>GitHub.</strong></a></p>
           </div>
           <div class="portfolio-item beach text">
-            <a href="https://7424243.github.io/current-beach-weather/" target="_blank"><img class="portfolio-img" src="images/sand-dollar.png" alt="sand dollar image"></a>
             <h4>Current Beach Weather</h4>
-            <p>This responsively designed app allows users to plan their day at the beach by obtaining current weather details, tide times, and sun and moon movement. It utilizes API integration, HTML, CSS, JavaScript and jQuery. Check it out <a href="https://7424243.github.io/current-beach-weather/" target="_blank"><strong>here</strong></a> or view the files on <a href="https://github.com/7424243/current-beach-weather" target="_blank"><strong>GitHub</strong></a>.</p>
+            <a href="https://7424243.github.io/current-beach-weather/" target="_blank"><img class="portfolio-img" src="images/sand-dollar.png" alt="sand dollar image"></a>
+            <p class="portfolio-text">This responsively designed app allows users to plan their day at the beach by obtaining current weather details, tide times, and sun and moon movement. It utilizes API integration, HTML, CSS, JavaScript and jQuery. Check it out <a href="https://7424243.github.io/current-beach-weather/" target="_blank"><strong>here</strong></a>or view the files on <a href="https://github.com/7424243/current-beach-weather" target="_blank"><strong>GitHub.</strong></a></p>
           </div>
           <div class="portfolio-item text">
-            <a href="https://recipenest.vercel.app/" target="_blank"><img class="portfolio-img" src="images/RecipeNest.png" alt="recipenest home page"></a>
             <h4>RecipeNest</h4>
-            <p>This full stack application allows users to keep track of their virtual recipe notes. React, JavaScript, CSS, Node, Express, PostgreSQL and JWT Authentication were utilized in building this app. Check it out <a href="https://recipenest.vercel.app/" target="_blank">here</a> or view the client side files on <a href="https://github.com/7424243/recipenest-client" target="_blank">GitHub</a>. You can also view the server side files <a href="https://github.com/7424243/recipenest-api" target="_blank">here.</a></p>
+            <a href="https://recipenest.vercel.app/" target="_blank"><img class="portfolio-img" src="images/RecipeNest.png" alt="recipenest home page"></a>
+            <p class="portfolio-text">This full stack application allows users to keep track of their virtual recipe notes. React, JavaScript, CSS, Node, Express, PostgreSQL and JWT Authentication were utilized in building this app. Check it out <a href="https://recipenest.vercel.app/" target="_blank">here</a>or view the client side files on <a href="https://github.com/7424243/recipenest-client" target="_blank">GitHub.</a>You can also view the server side files <a href="https://github.com/7424243/recipenest-api" target="_blank">here.</a></p>
           </div>
           <div class="portfolio-item apptrackr text">
-            <a href="https://apptrackr-client.vercel.app/" target="_blank"><img class="portfolio-img" src="images/apptrackr.png" alt="apptrackr screenshot"></a>
             <h4>apptrackr</h4>
-            <p class="porto">A full stack app that helps organize job applications and streamline the job search process. React, JavaScript, CSS, Node, Express, PostgreSQL and JWT Authentication were utilized in building this app. Check it out <a href="https://apptrackr-client.vercel.app/" target="_blank"><strong>here</strong></a>. You can also view the client side files on <a href="https://github.com/7424243/apptrackr-client" target="_blank"><strong>GitHub</strong></a> and the server side files <a href="https://github.com/7424243/apptrackr-api" target="_blank">here.</a></p>
+            <a href="https://apptrackr-client.vercel.app/" target="_blank"><img class="portfolio-img" src="images/apptrackr.png" alt="apptrackr screenshot"></a>
+            <p class="portfolio-text">A full stack app that helps organize job applications and streamline the job search process. React, JavaScript, CSS, Node, Express, PostgreSQL and JWT Authentication were utilized in building this app. Check it out <a href="https://apptrackr-client.vercel.app/" target="_blank"><strong>here.</strong></a>You can also view the client side files on <a href="https://github.com/7424243/apptrackr-client" target="_blank"><strong>GitHub</strong></a> and the server side files <a href="https://github.com/7424243/apptrackr-api" target="_blank">here.</a></p>
           </div>
         </div>
-      </article>
     </section>
 
     <!-- Section #4 -->
     <section id="contact" class="fourth-section">
       <h3>Contact Me</h3>
       <article>
-        <div class="group">
-          <div class="item text">
-            <p>If you or your company is looking to hire a new developer for your team, please don't hestitate to contact me. I'm grateful for this new adventure and am eager to connect with other developers!</p>
+        <div class="fourth-section-outer">
+          <div class="fourth-section-inner">
+            <p class="fourth-section-text">If you or your company is looking to hire a new developer for your team, please don't hestitate to contact me. I'm grateful for this new adventure and am eager to connect with other developers!</p>
             <form action="https://formspree.io/f/mdopzbwl" method="post">
               <label for="user-name">Name:</label>
               <input id="user-name" type="text" name="name" value="" required>
-
               <label for="user-email">Email:</label>
               <input id="user-email" type="text" name="email" value="" required>
-
               <label for="user-message">Message:</label>
               <textarea id="user-message" name="message" required></textarea>
               <button type="submit" name="button">Submit</button>
             </form>
           </div>
-          
-        </div>
-        <div class="item">
-          <a href="https://www.google.com/maps/place/Loveland,+CO/@40.407532,-105.2010061,11z/data=!3m1!4b1!4m5!3m4!1s0x87694fa609de9417:0x55bf9b6c43f23c8d!8m2!3d40.3977612!4d-105.0749801" target="_blank"><img class="map-img" src="images/lovelandmap.png" alt="Image snippet of a map of Loveland, CO"></a>
-          <p>* I'm currently located in Colorado but an open to relocating!</p>
-        </div>
-        <div class="group">
-          <div class="item align-center">
-            <a class="social" href="mailto:sam.sheets94@gmail.com" target="_blank"><strong>Email</strong></a>
-            <a class="social" href="https://www.linkedin.com/in/samantha-sheets-0142b2102/" target="_blank">LinkedIn</a>
-            <a class="social" href="https://github.com/7424243" target="_blank">GitHub</a>
+          <div class="fourth-section-inner">
+            <a href="https://www.google.com/maps/place/Loveland,+CO/@40.407532,-105.2010061,11z/data=!3m1!4b1!4m5!3m4!1s0x87694fa609de9417:0x55bf9b6c43f23c8d!8m2!3d40.3977612!4d-105.0749801" target="_blank"><img class="map-img" src="images/lovelandmap.png" alt="Image snippet of a map of Loveland, CO"></a>
+            <p class="fourth-section-text-small">* I'm currently located in Colorado but an open to relocating!</p>
           </div>
+        </div>
+        <div class="fourth-section-socials">
+            <a class="social" href="mailto:sam.sheets94@gmail.com" target="_blank"><strong>Email</strong></a>
+            <a class="social" href="https://www.linkedin.com/in/samantha-sheets-0142b2102/" target="_blank"><strong>LinkedIn</strong></a>
+            <a class="social" href="https://github.com/7424243" target="_blank"><strong>GitHub</strong></a>
         </div>
       </article>
     </section>
