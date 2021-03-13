@@ -165,8 +165,8 @@ a:hover {color: black; }
 }
 
 .portfolio-img {
-  width: 300px;
-  height: 300px;
+  width: 275px;
+  height: 275px;
   border-radius: 5%;
   border-color: #8E8D8A;
   border-style: solid;
@@ -237,11 +237,11 @@ form input {
   color: #495057;
   font-size: 16px;
   margin-bottom: 20px;
-  width: 100%;
+  width: 90%;
 }
 
 form label {
-  display: block;
+  display: inline-block;
   font-size: 18px;
   margin-bottom: 5px;
   color: #495057;
@@ -250,8 +250,9 @@ form label {
 }
 
 form textarea {
+  vertical-align: middle;
   height: 4.75rem;
-  width: 100%;
+  width: 86%;
   color: #495057;
   font-size: 16px;
   font-family: 'Lora', serif;
@@ -259,8 +260,8 @@ form textarea {
 }
 
 .map-img {
-  width: 300px;
-  height: 300px;
+  width: 275px;
+  height: 275px;
   margin-top: 20px;
   border-radius: 5%;
   border-color: black;
@@ -280,10 +281,9 @@ form textarea {
 }
 
 
-/* Media Query */
+/* Media Queries */
 
 @media all and (min-width: 330px) {
-
   .skills-list {
     flex-direction: row;
   }
@@ -296,7 +296,6 @@ form textarea {
   }
 
   /* Section #1 */
-
   .first-section-outer {
     flex-direction: row;
     justify-content: s;
@@ -312,6 +311,7 @@ form textarea {
     width: 100%;
   }
 
+  /* Section #3 */
   .third-section-outer {
     flex-direction: row;
   }
@@ -328,9 +328,14 @@ form textarea {
     margin-right: 0;
   }
 
+  /* Section #4 */
   .map-img {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .map-div {
+    width: 100%;
   }
 
   .fourth-section-outer {
@@ -343,7 +348,6 @@ form textarea {
     margin-left: 3%;
     margin-right: 3%;
     justify-content: space-between;
-    align-items: center;
   }
 
   .fourth-section-text-small {
@@ -353,10 +357,18 @@ form textarea {
 }
 
 @media all and (min-width: 900px) {
+
+  /* Section #1 */
   .about-img {
     width: 400px;
     height: 525px;
   }
+
+  .first-section {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
 }
 
 
@@ -365,11 +377,9 @@ form textarea {
   h1 {
     font-size: 10px;
   }
-
   h2 {
     font-size: 10px;
   }
-
   html,body {
       width: 100%;
       height: 100%;
@@ -378,10 +388,8 @@ form textarea {
       overflow-x: hidden; 
       overflow-wrap: anywhere;
   }
-
   nav {
     font-size: 10px;
   }
-
 }
 
